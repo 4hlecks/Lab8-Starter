@@ -45,7 +45,7 @@ function initializeServiceWorker() {
   // We first must register our ServiceWorker here before any of the code in
   // sw.js is executed.
   async function registerServiceWorkers() {
-    const registration = await navigator.serviceWorker.register("/sw.js", {
+    const registration = await navigator.serviceWorker.register("./sw.js", {
       scope: "/",});
     if (registration.installing) {
       // B4. TODO - Once the service worker has been successfully registered, console
